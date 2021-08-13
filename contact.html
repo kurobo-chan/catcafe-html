@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAT CAFE</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header header-top">
+      <div class="partsGrid">
+        <div class="inner">
+          <a href="index.html" class="siteName">
+            <img src="image/sitename.svg" alt="CATCAFE" />
+          </a>
+          <button class="navBtn" onclick="navFunc()">
+            <span class="sr-only">MENU</span>
+          </button>
+          <nav class="nav">
+            <ul>
+              <li><a href="price.html">料金・営業時間</a></li>
+              <li><a href="cat.html">保護猫紹介</a></li>
+              <li><a href="#">里親になるためには</a></li>
+              <li><a href="#">アクセス</a></li>
+              <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="mainWrap">
+      <div class="main-title">
+        <figure class="titleFigure">
+          <img src="image/fernando-lavin-VLnUsIE2w3U-unsplash.jpg" alt="" />
+        </figure>
+        <div class="partsGrid titleText">
+          <h1>お問い合わせ</h1>
+        </div>
+      </div>
+      <main class="main">
+        <div class="partsGrid">
+          <section class="grid12 contact-contents">
+            <p class="msg">
+              気になる猫との面会または保護猫カフェ
+              猫婆へのご来店のご希望がございましたら、ぜひお気軽に以下の連絡先にお問い合わせください。フォームでのご連絡もお待ちしています。
+            </p>
+            <div class="address">
+              <h2 class="deco">お問い合わせ</h2>
+              <div class="text">
+                <p>〒001-0001</p>
+                <p>沖縄県鳥尻分群久米鳥町字鳥鳥グスク</p>
+                <p class="tel">
+                  <a href="#">
+                    <i class="fas fa-mobile-alt"></i><span>0000-0000-0000</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="bar"></div>
+            <form class="form">
+              <div class="checkbox-form formBox">
+                <label for="g116" class="form-title">お問い合わせ内容</label>
+                <label class="checkbox"
+                  ><input
+                    type="checkbox"
+                    name="g116[]"
+                    value="里親希望(面会希望)"
+                  />里親希望(面会希望)</label
+                >
+                <label class="checkbox"
+                  ><input
+                    type="checkbox"
+                    name="g116[]"
+                    value="来店希望"
+                  />来店希望</label
+                >
+                <label class="checkbox"
+                  ><input
+                    type="checkbox"
+                    name="g116[]"
+                    value="その他"
+                  />その他</label
+                >
+              </div>
+              <div class="name-form formBox">
+                <label for="g116-1" class="form-title"
+                  >名前<span>(必須)</span></label
+                >
+                <input type="text" name="g116-1" aria-required="true" />
+              </div>
+              <div class="tel-form formBox">
+                <label for="g116-2" class="form-title">
+                  電話<span>(必須)</span>
+                </label>
+                <input type="tel" name="g116-2" aria-required="true" />
+              </div>
+              <div class="mail-form formBox">
+                <label for="g116-email" class="form-title">Email</label>
+                <input type="email" name="g116-email" />
+              </div>
+              <div class="msg-form formBox">
+                <label for="g116-4" class="form-title">メッセージ</label>
+                <textarea name="g116-4" id="g116-4" rows="20"></textarea>
+              </div>
+              <button type="submit" class="formSubmit">送信する</button>
+            </form>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="partsGrid">
+          <div class="inner">
+            <figure class="siteName">
+              <img src="image/sitename.svg" alt="CATCAFE" />
+            </figure>
+            <div class="address">
+              <p>
+                〒001-0001 <br />
+                沖縄県鳥尻分群久米鳥町字鳥鳥グスク
+              </p>
+              <p class="tel">0000-0000-0000</p>
+            </div>
+            <p class="copyLight">©2021 CAT CAFE</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
